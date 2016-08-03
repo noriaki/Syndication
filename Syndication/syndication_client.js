@@ -2,9 +2,9 @@ var request = require('request'),
     FeedParser = require('feedparser'),
     xml2js = require('xml2js');
 
-var HTTP = function() {}
+var Syndication = function() {}
 
-HTTP.prototype.fetchFeed = function(url) {
+Syndication.prototype.fetchFeed = function(url) {
     var feed,
         parser = new xml2js.Parser(),
         req = request(url),
@@ -33,9 +33,10 @@ HTTP.prototype.fetchFeed = function(url) {
         
         while (item = stream.read()) {
             console.log(item.title);
+            console.log(item.origlink);
             console.log('------------------------')
         }
     });
 }
 
-module.exports = HTTP;
+module.exports = Syndication;
