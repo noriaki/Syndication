@@ -1,4 +1,6 @@
-var rss = require('./http_client');
+var Syndication = require('./Syndication/syndication_client');
 
-var l = new rss;
-rss.getFeeds;
+var SyndiInitial = new Syndication();
+
+SyndiInitial.fetchFeed('http://feeds.reuters.com/reuters/INtopNews');
+

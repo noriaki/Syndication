@@ -4,10 +4,10 @@ var request = require('request'),
 
 var HTTP = function() {}
 
-HTTP.prototype.fetchFeed = function() {
+HTTP.prototype.fetchFeed = function(url) {
     var feed,
         parser = new xml2js.Parser(),
-        req = request('http://thing.live/feed/'),
+        req = request(url),
         feedparser = new FeedParser([]);
 
     req.on('error', function(error) {
@@ -38,7 +38,4 @@ HTTP.prototype.fetchFeed = function() {
     });
 }
 
-
-var a = new HTTP();
-a.fetchFeed();
-//module.exports = HTTP;
+module.exports = HTTP;
