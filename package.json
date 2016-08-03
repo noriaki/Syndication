@@ -1,6 +1,6 @@
 {
   "name": "syndication",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A library written in NodeJS for Syndicating RSS &amp; ATOM based feeds.",
   "main": "index.js",
   "scripts": {

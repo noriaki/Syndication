@@ -1,6 +1,7 @@
 var request = require('request'),
     FeedParser = require('feedparser'),
-    xml2js = require('xml2js');
+    xml2js = require('xml2js'),
+    feedData=[];
 
 var Syndication = function() {}
 
@@ -24,8 +25,8 @@ Syndication.prototype.fetchFeed = function(url) {
     feedparser.on('error', function(error) {
         // always handle errors
     });
+
     feedparser.on('readable', function() {
-        var dataSchema=[];
         // This is where the action is!
         var stream = this,
             meta = this.meta // **NOTE** the "meta" is always available in the context of the feedparser instance
@@ -33,10 +34,12 @@ Syndication.prototype.fetchFeed = function(url) {
             item;
         
         while (item = stream.read()) {
-            dataSchema.push(item.title);
+            feedData.push({title:item.title});
         }
-        return dataSchema;
     });
+    feedparser.on('end',()=>{
+        return feedData;
+    })
 }
 
-module.exports = Syndication;
+module.exports=Syndication;
