@@ -1,23 +1,44 @@
 var request = require('request'),
+    FeedParser = require('feedparser'),
     xml2js = require('xml2js');
 
 var HTTP = function() {}
 
 HTTP.prototype.fetchFeed = function() {
-    var feed;
-    var parser = new xml2js.Parser();
-    request('http://rss.cnn.com/rss/edition.rss',
-        (error, response, body) => {
-            if (!error && response.statusCode == 200) {
-                if (response.headers['content-type'].split(';')[0] === 'text/xml') {
-                    parser.parseString(body, function(err, result) {
-                        console.dir(JSON.stringify(result));
-                        console.log('Done');
-                    });
-                }
-            }
-        })
+    var feed,
+        parser = new xml2js.Parser(),
+        req = request('http://thing.live/feed/'),
+        feedparser = new FeedParser([]);
+
+    req.on('error', function(error) {
+        // handle any request errors
+    });
+    req.on('response', function(res) {
+        var stream = this;
+
+        if (res.statusCode != 200) return this.emit('error', new Error('Bad status code'));
+
+        stream.pipe(feedparser);
+    });
+
+    feedparser.on('error', function(error) {
+        // always handle errors
+    });
+    feedparser.on('readable', function() {
+        // This is where the action is!
+        var stream = this,
+            meta = this.meta // **NOTE** the "meta" is always available in the context of the feedparser instance
+            ,
+            item;
+        
+        while (item = stream.read()) {
+            console.log(item.title);
+            console.log('------------------------')
+        }
+    });
 }
+
+
 var a = new HTTP();
 a.fetchFeed();
 //module.exports = HTTP;
