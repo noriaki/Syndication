@@ -25,6 +25,7 @@ Syndication.prototype.fetchFeed = function(url) {
         // always handle errors
     });
     feedparser.on('readable', function() {
+        var dataSchema=[];
         // This is where the action is!
         var stream = this,
             meta = this.meta // **NOTE** the "meta" is always available in the context of the feedparser instance
@@ -32,10 +33,9 @@ Syndication.prototype.fetchFeed = function(url) {
             item;
         
         while (item = stream.read()) {
-            console.log(item.title);
-            console.log(item.origlink);
-            console.log('------------------------')
+            dataSchema.push(item.title);
         }
+        return dataSchema;
     });
 }
 
