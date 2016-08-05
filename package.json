@@ -1,7 +1,7 @@
 {
   "name": "syndication",
   "version": "0.1.6",
-  "description": "A library written in NodeJS for Syndicating RSS & ATOM based feeds. It is a Promise based library which extends feedparser.
+  "description": "A library written in NodeJS for Syndicating RSS & ATOM based feeds. It is a Promise based library which extends feedparser.",
   "main": "lib/index.js",
   "scripts": {
     "test": "\"echo \"Error: no test specified\" && exit 1\""
