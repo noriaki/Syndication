@@ -28,8 +28,10 @@ feedPromise.then((feed) => {
   console.log(error);
 });
 ```
- 2. Parsing multiple feeds - In Progress <i class="icon-ticket"></i>
- 3. Timeout for Feeds - In Progress <i class="icon-ticket"></i>
- 4. Storage - In Progress <i class="icon-ticket"></i>
- 5. REST Based URL Entry <i class="icon-ticket"></i>
- 6. Easy Management for Segregated URLS(URL Grouping) <i class="icon-ticket"></i>
+**Upcoming Features**
+
+ 1. Parsing multiple feeds - In Progress
+ 2. Timeout for Feeds - In Progress 
+ 3. Storage - In Progress
+ 4. REST Based Interface  
+ 5. Easy Management for Segregated URLS(URL Grouping) <i class="icon-ticket"></i>
