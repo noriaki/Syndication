@@ -17,7 +17,7 @@ This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Is
 
 **Current Features**
 
- 1. Simple Parsing using URL's, the scenario is mentioned below
+ 1. Simple Parsing using URL's, the scenario is mentioned below<i class=" icon-ok"></i>
 
     var Syndication = require("syndication");
     var feeds = new Syndication();
@@ -28,9 +28,8 @@ This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Is
       console.log(error);
     });
 
- 2. Parsing multiple feeds - In Progress
- 3. Timeout for Feeds - In Progress
- 4. Storage - In Progress
- 5. REST Based URL Entry
- 6. Easy Management for Segregated URLS(URL Grouping)
-
+ 2. Parsing multiple feeds - In Progress <i class="icon-ticket"></i>
+ 3. Timeout for Feeds - In Progress <i class="icon-ticket"></i>
+ 4. Storage - In Progress <i class="icon-ticket"></i>
+ 5. REST Based URL Entry <i class="icon-ticket"></i>
+ 6. Easy Management for Segregated URLS(URL Grouping) <i class="icon-ticket"></i>
