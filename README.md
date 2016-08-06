@@ -17,17 +17,37 @@ This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Is
 
 **Current Features**
 
- 1. Simple Parsing using URL's, the scenario is mentioned below<i class=" icon-ok"></i>
-```
-var Syndication = require("syndication");
-var feeds = new Syndication();
-var feedPromise = feeds.fetch('http://thing.live/rss');
-feedPromise.then((feed) => {
-  console.log(feed);
-}).catch((error) => {
-  console.log(error);
-});
-```
+ 1. Simple Parsing using URL's, the scenario is mentioned below
+    ```
+    var Syndication = require("syndication");
+    var feeds = new Syndication();
+    var feedPromise = feeds.fetch('http://thing.live/rss');
+    feedPromise.then((feed) => {
+      console.log(feed);
+    }).catch((error) => {
+      console.log(error);
+    });
+    ```
+
+ 2. Using Promise.all() to resolve multiple Promises for fetching feeds.
+    ```
+    var Syndication = require("syndication");
+    var feeds = new Syndication();
+    var fetchedFeeds = feeds.fetch('http://thing.live/rss');
+    var fetchedFeeds1 = feeds.fetch('http://rss.cnn.com/rss/edition.rss');
+    
+    /*Using Promise.all() to Resolve*/
+    Promise.all([
+        fetchedFeeds,
+        fetchedFeeds1
+    ]).then((val) => {
+        console.log(val);
+    }).catch((error) => {
+        console.log(error)
+    });
+    ```
+
+
 **Upcoming Features**
 
  1. Parsing multiple feeds - In Progress
