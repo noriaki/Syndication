@@ -10,7 +10,9 @@ This is a simple module that enables the ***feedparser*** with ***Promise***. It
  2. [feedparser](https://www.npmjs.com/package/feedparser)
 
 -----------
-*Installation*
+
+Installation
+____________
 For the installation you can get along with the following
 ```js
 npm install syndication --save
