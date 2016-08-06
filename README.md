@@ -4,7 +4,7 @@
   [![NPM Downloads][downloads-image]][downloads-url]
   [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000?style=plastic)](https://github.com/shivkumarganesh/Syndication)
 
-![Made By Information Visualization Geeks](https://raw.githubusercontent.com/shivkumarganesh/Syndication/blob/master/syndication.png)  
+![Made By Information Visualization Geeks](https://raw.githubusercontent.com/shivkumarganesh/Syndication/master/syndication.png)  
   
 This is a simple module that enables the ***feedparser*** with ***Promise***. It depends on the following libraries:-
 
