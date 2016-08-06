@@ -1,4 +1,8 @@
 # Syndication
+
+  [![NPM Version][npm-image]][npm-url]
+  [![NPM Downloads][downloads-image]][downloads-url]
+  
 This is a simple module that enables the ***feedparser*** with ***Promise***. It depends on the following libraries:-
 
  1. [request](https://www.npmjs.com/package/request)
@@ -57,3 +61,9 @@ This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Is
 - [ ] Easy Management for Segregated URLS(URL Grouping)
 - [ ] Documentation
 - [ ] Testing
+
+
+[npm-image]: https://img.shields.io/npm/v/syndication.svg
+[npm-url]: https://npmjs.org/package/syndication
+[downloads-image]: https://img.shields.io/npm/dm/syndication.svg
+[downloads-url]: https://npmjs.org/package/syndication
