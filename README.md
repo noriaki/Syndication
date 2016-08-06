@@ -11,12 +11,14 @@ This is a simple module that enables the ***feedparser*** with ***Promise***. It
 
 -----------
 
-Installation
-____________
+#Installation
+
 For the installation you can get along with the following
 ```js
 npm install syndication --save
 ```
+
+The dependencies the above module have is explained below:-
 
 **Request**
 A module for making HTTP request. Basically a HTTP client. This helps to fetch the RSS/ATOM/RDF URLS and helps in parsing the same.
@@ -24,11 +26,7 @@ A module for making HTTP request. Basically a HTTP client. This helps to fetch t
 **Feedparser**
 This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Isaac Schlueter's sax parser.
 
-
-----------
-
-
-**Current Features**
+#Current Features
 
  1. Simple Parsing using URL's, the scenario is mentioned below
     ```js
@@ -61,7 +59,7 @@ This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Is
     ```
 
 
-**Upcoming Features**
+#Upcoming Features
 
 - [ ] Parsing multiple feeds - In Progress
 - [ ] Timeout for Feeds - In Progress 
