@@ -3,8 +3,9 @@
   [![NPM Version][npm-image]][npm-url]
   [![NPM Downloads][downloads-image]][downloads-url]
   [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000?style=plastic)](https://github.com/shivkumarganesh/Syndication)
-  ![](https://nodei.co/npm/syndication.svg?downloads=true&downloadRank=true&stars=true)
-  ![Made By Syndication](https://raw.githubusercontent.com/shivkumarganesh/Syndication/master/syndication.png) 
+  
+![](https://nodei.co/npm/syndication.svg?downloads=true&downloadRank=true&stars=true)
+![Made By Syndication](https://raw.githubusercontent.com/shivkumarganesh/Syndication/master/syndication.png) 
   
 This is a simple module that enables the ***feedparser*** with ***Promise***. It depends on the following libraries:-
 
