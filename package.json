@@ -1,6 +1,6 @@
 {
   "name": "syndication",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A library written in NodeJS for Syndicating RSS & ATOM based feeds. It is a Promise based library which extends feedparser.",
   "main": "lib/index.js",
   "scripts": {
@@ -18,15 +18,18 @@
     "Web",
     "Feeds",
     "Content",
-    "Distribution"
+    "Distribution",
+    "Content Marketing",
+    "Web Content"
   ],
-  "author": "Shiv Kumar Ganesh",
+  "author": "Shiv Kumar Ganesh <gshiv.sk@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shivkumarganesh/Syndication/issues"
   },
   "homepage": "https://github.com/shivkumarganesh/Syndication#readme",
   "devDependencies": {
+    "jsdoc": "^3.4.0",
     "mocha": "^3.0.0"
   },
   "dependencies": {
