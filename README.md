@@ -9,6 +9,12 @@ This is a simple module that enables the ***feedparser*** with ***Promise***. It
  1. [request](https://www.npmjs.com/package/request)
  2. [feedparser](https://www.npmjs.com/package/feedparser)
 
+-----------
+*Installation*
+For the installation you can get along with the following
+```js
+npm install syndication --save
+```
 
 **Request**
 A module for making HTTP request. Basically a HTTP client. This helps to fetch the RSS/ATOM/RDF URLS and helps in parsing the same.
