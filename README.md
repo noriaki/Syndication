@@ -69,6 +69,7 @@ This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Is
 - [ ] Parsing multiple feeds
 - [ ] Timeout for Feeds
 - [ ] Storage
+- [ ] Feed Queueing System for Processing Properly
 - [ ] REST Based Interface 
 - [ ] Easy Management for Segregated URLS(URL Grouping)
 - [ ] Documentation
