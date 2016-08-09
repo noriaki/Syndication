@@ -65,8 +65,7 @@ This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Is
 #Upcoming Features
 - [x] Fetching single URL for feeds
 - [x] Fetching Multiple URLs using Promise.all()
-- [ ] Fetching Multiple URLs for feeds
-- [ ] Parsing multiple feeds
+- [x] Fetching Multiple URLs for feeds and Returing Array of Promises
 - [ ] Timeout for Feeds
 - [ ] Storage
 - [ ] Feed Queueing System for Processing Properly
