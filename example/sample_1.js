@@ -5,6 +5,7 @@ var fetchedFeeds=feeds.fetch('http://thing.live/rss');
 
 fetchedFeeds.then((val)=>{
     console.log(val);
+    console.log("=====================");
 }).catch((error)=>{
     console.log(error)
 });

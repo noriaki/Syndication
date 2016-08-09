@@ -8,7 +8,7 @@ var fetchedFeedsPromise=feeds.fetchAll([
     'http://feeds.reuters.com/reuters/INworldNews'
     ]);
 Promise.all(fetchedFeedsPromise).then((item)=>{
-    console.log(item.length);
-}).catch((error)=>{
-    console.log(error);
+    console.log(item);
+}).catch((e)=>{
+    console.log(error)
 });
