@@ -60,6 +60,23 @@ This module adds methods for RSS, Atom, and RDF feed parsing in node.js using Is
         console.log(error)
     });
     ```
+ 3. Using fetchAll(options) to get an Array of Promises that can be resolved
+    ```js
+    var Syndication = require('syndication');
+
+    var feeds = new Syndication();
+    var fetchedFeedsPromise=feeds.fetchAll([
+        'http://feeds.reuters.com/reuters/INtopNews',
+        'http://feeds.reuters.com/reuters/INbusinessNews',
+        'http://feeds.reuters.com/reuters/INsouthAsiaNews',
+        'http://feeds.reuters.com/reuters/INworldNews'
+        ]);
+    Promise.all(fetchedFeedsPromise).then((item)=>{
+        console.log(item);
+    }).catch((e)=>{
+        console.log(error)
+    });
+    ```
 
 
 #Upcoming Features
