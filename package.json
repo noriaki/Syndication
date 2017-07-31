@@ -1,6 +1,6 @@
 {
   "name": "syndication",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "A library written in NodeJS for Syndicating RSS & ATOM based feeds. It is a Promise based library which extends feedparser.",
   "main": "lib/index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "mocha": "^3.0.0"
   },
   "dependencies": {
-    "feedparser": "^1.1.4",
-    "request": "^2.74.0"
+    "feedparser": "^2.2.1",
+    "request": "^2.81.0"
   }
 }
